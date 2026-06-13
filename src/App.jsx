@@ -12,7 +12,7 @@ function App() {
 
      const getMovies = async (query) => {
        const res = await fetch(
-         `http://www.omdbapi.com/?apikey=3744b0f7&s=${query}`,
+         `https://www.omdbapi.com/?apikey=3744b0f7&s=${query}`,
        );
        const data = await res.json();
        console.log(data);
